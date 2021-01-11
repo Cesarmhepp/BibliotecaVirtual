@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BibliotecaVirtual.Cuenta">
+
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+                <Label
+               Text="Cuenta"
+               FontSize="22"
+               TextColor="White"
+                    VerticalTextAlignment="Center"
+               />
+                <Image Source="logoblanco.png"  WidthRequest="70" HeightRequest="50" Margin="0,0,20,0" HorizontalOptions="EndAndExpand"/>
+
+            </StackLayout>
+    </NavigationPage.TitleView>
+
+    <Grid RowSpacing="0" ColumnSpacing="0">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200" />
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            
+        </Grid.ColumnDefinitions>
+        <Image Source="icon_user1.png" WidthRequest="250" HeightRequest="250" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" Grid.ColumnSpan="2" Margin="0,20,0,20"/>
+        <!-- Nombre-->
+        <BoxView BackgroundColor="#2296f3" Grid.Row="1" Grid.Column="0" Grid.RowSpan="4" Grid.ColumnSpan="2" Margin="10,0,10,0" CornerRadius="10"/>
+        <StackLayout Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="20,0,20,0" Orientation="Horizontal" Padding="0,5,0,5">
+            <Label Text="Nombre" Padding="15,0,0,0" FontSize="Large" HorizontalOptions="StartAndExpand" TextColor="WhiteSmoke"/>
+            <Label Text="César Muñoz Hepp" FontSize="Medium" HorizontalOptions="EndAndExpand" Padding="0,0,10,0" TextColor="WhiteSmoke"/>
+        </StackLayout>
+        <StackLayout Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"  Margin="20,0,20,0" Orientation="Horizontal" Padding="0,5,0,5">
+            <Label Text="Correo" Padding="15,0,0,0" FontSize="Large" HorizontalOptions="StartAndExpand" TextColor="WhiteSmoke"/>
+            <Label Text="cesar.munoz1@cl.nestle.com" HorizontalOptions="EndAndExpand"  FontSize="Medium" TextColor="WhiteSmoke"/>
+        </StackLayout>
+        <StackLayout Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"  Margin="20,0,20,0" Orientation="Horizontal" Padding="0,5,0,5">
+            <Label Text="Cargo" Padding="15,0,0,0" FontSize="Large" HorizontalOptions="StartAndExpand" TextColor="WhiteSmoke"/>
+            <Label Text="Operario Limpieza Industrial" HorizontalOptions="EndAndExpand"  FontSize="Medium" TextColor="WhiteSmoke"/>
+        </StackLayout>
+        <StackLayout Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"  Margin="20,0,20,0" Orientation="Horizontal" Padding="0,5,0,5">
+            <Label Text="Fabrica" Padding="15,0,0,0" FontSize="Large" HorizontalOptions="StartAndExpand" TextColor="WhiteSmoke"/>
+            <Label Text="César Muñoz Hepp" HorizontalOptions="EndAndExpand"  FontSize="Medium" TextColor="WhiteSmoke"/>
+        </StackLayout>
+        
+        <!-- Nombre de usuario-->
+        
+        
+
+
+    </Grid>
+
+
+    
+</ContentPage>

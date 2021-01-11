@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BibliotecaVirtual.Fabricacion">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Label
+               Text="Fabrica"
+               FontSize="22"
+               TextColor="White"
+                    VerticalTextAlignment="Center"
+               />
+            <Image Source="logoblanco.png"  WidthRequest="70" HeightRequest="50" Margin="0,0,20,0" HorizontalOptions="EndAndExpand"/>
+
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#2296f3">
+            <Button Text="Extracto de malta"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

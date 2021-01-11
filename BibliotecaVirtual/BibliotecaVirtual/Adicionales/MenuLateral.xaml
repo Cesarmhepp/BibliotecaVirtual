@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BibliotecaVirtual.Adicionales.MenuLateral">
+    <MasterDetailPage.Master>
+        <ContentPage
+            Title="Menú"
+            BackgroundColor="#005695 "
+            Padding="0,20,0,0">
+            <StackLayout>
+                <Image Source="logoblanco.png" WidthRequest="100" HeightRequest="100" Margin="0,5,0,5"/>
+                <Label Text="Menú" HorizontalTextAlignment="Center" TextColor="WhiteSmoke" FontSize="20" />
+                <ListView BackgroundColor="#FF2772A8" x:Name="ListMenu" ItemSelected="ListMenu_ItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ImageCell TextColor="#f8f8ff" DetailColor="#f8f8ff" Height="30"
+                                       Text="{Binding MenuTitle}"
+                                       Detail="{Binding MenuDetail}"
+                                       ImageSource="{Binding Icon}">
+                            </ImageCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Button Clicked="Cerrar_Sesion" Text="Cerrar Sesion" TextColor="WhiteSmoke" Margin="100,10,100,10" BackgroundColor="#FF2772A8"></Button>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+</MasterDetailPage>
